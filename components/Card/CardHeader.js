@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native'
-import { CardStyle } from '../../styles/CardStyle'
+import { CardStyle } from '../../styles/Style'
 
 export default function CardHeader({left, title, subtitle, right}) {
     let mid;

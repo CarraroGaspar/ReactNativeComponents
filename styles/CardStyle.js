@@ -1,7 +1,4 @@
-import { StyleSheet } from 'react-native'
-import { Styles } from './Style'
-
-const CardStyle = StyleSheet.create({
+const CardStyle = {
     card: {
         padding: 5,
         borderRadius: 4,
@@ -42,6 +39,6 @@ const CardStyle = StyleSheet.create({
         justifyContent: "flex-end",
         paddingRight: 4
     }
-})
+}
 
 export { CardStyle };
