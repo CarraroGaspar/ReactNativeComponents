@@ -13,7 +13,7 @@ export default function App() {
         leftHeader={<TouchableOpacity><Image
           style={{
             width: 50,
-            height: 50,
+            height: 50
           }}
           source={{
             uri: 'https://reactnative.dev/img/tiny_logo.png',
@@ -23,7 +23,7 @@ export default function App() {
         subtitle={<Text style={{fontSize: 12, color: "#AEAEAE"}}>Prueba</Text>} 
         rightHeader={<TouchableOpacity style={{width: 50, height: 50, backgroundColor: "#EAEAEA", padding: 3, borderRadius: 6, justifyContent: "center", alignItems: "center"}}><Text>OK</Text></TouchableOpacity>}
         topBody={<Text style={{fontWeight: "bold", fontSize: 16, alignSelf:"center"}}>Top Body</Text>}
-        bottonBody={<Text style={{fontWeight: "bold", fontSize: 16}}>Body</Text>}
+        bottomBody={<Text style={{fontWeight: "bold", fontSize: 16, alignSelf:"center"}}> botton Body</Text>}
         leftFooter={<TouchableOpacity style={{width: 50, height: 50, backgroundColor: "#EAEAEA", padding: 3, borderRadius: 6, justifyContent: "center", alignItems: "center"}}><Text>OK</Text></TouchableOpacity>}
         middleFooter={<TouchableOpacity style={{width: 50, height: 50, backgroundColor: "#EAEAEA", padding: 3, borderRadius: 6, justifyContent: "center", alignItems: "center"}}><Text>OK</Text></TouchableOpacity>}
         rightFooter={<Icon
@@ -32,20 +32,6 @@ export default function App() {
           type='font-awesome'
           color='#f50'
           onPress={() => console.log('hello')} />}
-      />
-      <Card 
-        leftHeader={<Image
-          style={{
-            width: 50,
-            height: 50,
-          }}
-          source={{
-            uri: 'https://reactnative.dev/img/tiny_logo.png',
-          }}
-        />} 
-        title={<Text style={{fontWeight: "bold", fontSize: 16}}>React Native 2</Text>} 
-        subtitle={<Text style={{fontSize: 12, color: "#AEAEAE"}}>Prueba 2</Text>} 
-        rightHeader={<TouchableOpacity style={{width: 50, height: 50, backgroundColor: "#EAEAEA", padding: 3, borderRadius: 6, justifyContent: "center", alignItems: "center"}}><Text>OK</Text></TouchableOpacity>}
       />
     </View>
   );
