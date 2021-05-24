@@ -24,13 +24,13 @@ export default function CardHeader({left, title, subtitle, right}) {
     return <View style={CardStyle.cardHeader}>
         {/* Left */}
         <View style={CardStyle.cardHeaderLeft}>
-            { left }
+            <View style={{alignSelf:'center'}}>{ left }</View>
         </View>
         {/* Mid */}
         { mid }
         {/* Right */}
         <View style={CardStyle.cardHeaderRight}>
-            { right }
+            <View style={{alignSelf:'center'}}>{ right }</View>
         </View>
     </View>;
 }

@@ -5,8 +5,14 @@ import {CardStyle} from '../../styles/CardStyle';
 export default function CardFooter({left, middle, right}) 
 {
     return <View style={CardStyle.cardFooter}>
-        <View style={CardStyle.cardHeaderLeft}>{left}</View>
-        <View style={CardStyle.cardHeaderMid}>{middle}</View>
-        <View style={CardStyle.cardFooterRight}>{right}</View>
+        <View style={CardStyle.cardFooterSideComp}>
+            <View style={{alignSelf:'center'}}>{ left }</View>
+            </View>
+        <View style={CardStyle.cardFooterComp}>
+            <View style={{alignSelf:'center'}}>{ middle }</View>
+        </View>
+        <View style={CardStyle.cardFooterSideComp}>
+            <View style={{alignSelf:'center'}}>{ right }</View>
+        </View>
     </View>
 }

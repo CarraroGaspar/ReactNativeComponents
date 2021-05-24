@@ -17,43 +17,37 @@ const CardStyle = StyleSheet.create({
     },
     cardHeaderLeft: {
         flex: 1,
-        alignSelf: "center",
+        justifyContent:"center",
         paddingLeft: 4,
-        flexBasis : 1,
-        backgroundColor: "yellow"
+        flexBasis : 1
     },
     cardHeaderMid: {
         flex: 3,
         display: 'flex',
-        flexDirection: 'column',
-        backgroundColor: "green",
+        flexDirection: 'column'
     },
     cardHeaderMidTitle: {
         flex: 1,
-        paddingVertical: 5,
         paddingHorizontal: 3
     },
     cardHeaderMidSubtitle: {
         flex: 1,
-        paddingVertical: 2,
         paddingHorizontal: 3
     },
     cardHeaderRight: {
         flex: 1,
-        //flexBasis: "auto",
-        //alignSelf: "center",
-        textAlign: "right",
-        //justifyContent: "flex-end",
+        justifyContent:"center",
         paddingRight: 4
     },
     cardBody: {
         display: 'flex',
         flexDirection: "column",
         justifyContent:"center", 
-        padding: 5
+        flexWrap: 'wrap'
     },
     cardBodyComponent:{
-        backgroundColor:"pink",
+        flex: 1,
+        padding:5
     },
     cardFooter: {
         display: 'flex',
@@ -62,14 +56,13 @@ const CardStyle = StyleSheet.create({
         flex: 1,
         flexBasis: 60
     },
-    cardFooterRight: {
+    cardFooterComp: {
+        flex: 3,
+        justifyContent: "center"
+    },
+    cardFooterSideComp: {
         flex: 1,
-        backgroundColor:"red",
-        //flexBasis: "auto",
-        //alignSelf: "center",
-        //textAlign: "right",
-        justifyContent: "flex-end",
-        //paddingRight: 4
+        justifyContent: "center"
     }
 })
 

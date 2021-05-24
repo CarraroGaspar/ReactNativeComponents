@@ -4,8 +4,12 @@ import { CardStyle } from '../../styles/CardStyle'
 
 export default function CardBody({top, bottom}){
 return(<View style={CardStyle.cardBody}>
-        <View style={CardStyle.cardBodyComponent}>{top}</View>
-        <View style={CardStyle.cardBodyComponent}>{bottom}</View>
+        <View style={CardStyle.cardBodyComponent}>
+            <View style={{alignSelf:'center'}}>{ top }</View>
+        </View>
+        <View style={CardStyle.cardBodyComponent}>
+            <View style={{alignSelf:'center'}}>{ bottom }</View>
+        </View>
     </View>
 )
 }
