@@ -5,7 +5,7 @@ import { BoxShadow } from '../BoxShadow/BoxShadow'
 import CardHeader  from './CardHeader'
 //import CardBody  from './CardBody'
 import CardFooter  from './CardFooter'
-import { CardStyle } from '../../styles/CardStyle'
+import { CardStyle } from '../../styles/Style'
 import CardBody from './CardBody';
 
 export default function Card({leftHeader, title, subtitle, rightHeader, topBody, bottomBody, leftFooter, middleFooter, rightFooter }) {
