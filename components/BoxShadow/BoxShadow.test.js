@@ -6,5 +6,5 @@ it('renders correctly', () => {
     const box = renderer
         .create(<BoxShadow></BoxShadow>);
 
-    expect(box).not.toBeDefined();
+    expect(box).toBeDefined();
 });
