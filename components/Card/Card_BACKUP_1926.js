@@ -2,10 +2,14 @@ import React from 'react';
 import { View, Text } from 'react-native'
 import { BoxShadow } from '../BoxShadow/BoxShadow'
 import CardHeader  from './CardHeader'
+<<<<<<< HEAD
 //import CardBody  from './CardBody'
 import CardFooter  from './CardFooter'
 import { Styles } from '../../styles/Style'
 import CardBody from './CardBody';
+=======
+import { CardStyle } from '../../styles/Style'
+>>>>>>> gcstyles
 
 export default function Card({leftHeader, title, subtitle, rightHeader, topBody, bottomBody, leftFooter, middleFooter, rightFooter }) {
     return <BoxShadow>
