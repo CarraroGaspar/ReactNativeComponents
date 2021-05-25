@@ -1,36 +1,36 @@
 import React from 'react';
 import { View } from 'react-native'
-import { CardStyle } from '../../styles/CardStyle'
+import { Styles } from '../../styles/Style'
 
 export default function CardHeader({left, title, subtitle, right}) {
     let mid;
     if (typeof subtitle !== 'undefined') {
-        mid = <View style={CardStyle.cardHeaderMid}>
+        mid = <View style={Styles.cardHeaderMid}>
             {/* Title */}
-            <View style={CardStyle.cardHeaderMidTitle}>
+            <View style={Styles.cardHeaderMidTitle}>
                 { title }
             </View>
             {/* Subtitle */}
-            <View style={CardStyle.cardHeaderMidSubtitle}>
+            <View style={Styles.cardHeaderMidSubtitle}>
                 { subtitle }            
             </View>
         </View>
     } else {
-        mid = <View style={CardStyle.cardHeaderMidTitle}>
+        mid = <View style={Styles.cardHeaderMidTitle}>
             { title }
         </View>
     }
 
-    return <View style={CardStyle.cardHeader}>
+    return <View style={Styles.cardHeader}>
         {/* Left */}
-        <View style={CardStyle.cardHeaderLeft}>
-            { left }
+        <View style={Styles.cardHeaderLeft}>
+            <View style={{alignSelf:'center'}}>{ left }</View>
         </View>
         {/* Mid */}
         { mid }
         {/* Right */}
-        <View style={CardStyle.cardHeaderRight}>
-            { right }
+        <View style={Styles.cardHeaderRight}>
+            <View style={{alignSelf:'center'}}>{ right }</View>
         </View>
     </View>;
 }
