@@ -1,6 +1,6 @@
 import { View } from 'react-native';
 import React from 'react';
-import {CardStyle} from '../../styles/Style';
+import {Styles} from '../../styles/Style';
 
 export default function CardFooter({left, middle, right}) 
 {

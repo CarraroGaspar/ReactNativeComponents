@@ -1,13 +1,13 @@
 import { View, Text } from "react-native"
 import React from 'react'
-import { CardStyle } from '../../styles/Style'
+import { Styles } from '../../styles/Style'
 
 export default function CardBody({top, bottom}){
-return(<View style={CardStyle.cardBody}>
-        <View style={CardStyle.cardBodyComponent}>
+return(<View style={Styles.cardBody}>
+        <View style={Styles.cardBodyComponent}>
             <View style={{alignSelf:'center'}}>{ top }</View>
         </View>
-        <View style={CardStyle.cardBodyComponent}>
+        <View style={Styles.cardBodyComponent}>
             <View style={{alignSelf:'center'}}>{ bottom }</View>
         </View>
     </View>
